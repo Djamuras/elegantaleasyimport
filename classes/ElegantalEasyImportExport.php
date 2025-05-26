@@ -1502,6 +1502,29 @@ class ElegantalEasyImportExport extends ElegantalEasyImportObjectModel
                 $value = $combination['Values'];
                 break;
             case 'attribute_colors':
+                // Get all attributes for this combination with color information
+                $sql = 'SELECT pac.`id_attribute`, a.`color`, ag.`is_color_group`, al.`name`
+                        FROM `' . _DB_PREFIX_ . 'product_attribute_combination` pac
+                        LEFT JOIN `' . _DB_PREFIX_ . 'attribute` a ON a.`id_attribute` = pac.`id_attribute`
+                        LEFT JOIN `' . _DB_PREFIX_ . 'attribute_group` ag ON ag.`id_attribute_group` = a.`id_attribute_group`
+                        LEFT JOIN `' . _DB_PREFIX_ . 'attribute_lang` al ON al.`id_attribute` = a.`id_attribute` AND al.`id_lang` = ' . (int) $this->id_lang_default . '
+                        WHERE pac.`id_product_attribute` = ' . (int) $combination['id_product_attribute'];
+                
+                $attributes = Db::getInstance()->executeS($sql);
+                
+                if ($attributes) {
+                    $colors = [];
+                    
+                    foreach ($attributes as $attribute) {
+                        // Only process if it's a color group and has a color value
+                        if ($attribute['is_color_group'] && !empty($attribute['color'])) {
+                            $colors[] = $attribute['color'];
+                        }
+                    }
+                    
+                    $value = implode($this->multiple_value_separator, $colors);
+                }
+                break;
             case 'attribute_textures':
                 // Get all attributes for this combination
                 $sql = 'SELECT pac.`id_attribute`, a.`color`, ag.`is_color_group` 
