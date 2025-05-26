@@ -195,6 +195,8 @@ class ElegantalEasyImportExport extends ElegantalEasyImportObjectModel
         'combination_reference' => 'Combination Reference',
         'attribute_names' => 'Attribute Names',
         'attribute_values' => 'Attribute Values',
+        'attribute_colors' => 'Attribute Colors (Hex)',
+        'attribute_textures' => 'Attribute Textures (URLs)',
         'supplier_reference' => 'Supplier Reference',
         'supplier_price' => 'Supplier Price',
         'ean' => 'EAN',
@@ -1498,6 +1500,57 @@ class ElegantalEasyImportExport extends ElegantalEasyImportObjectModel
                 break;
             case 'attribute_values':
                 $value = $combination['Values'];
+                break;
+            case 'attribute_colors':
+            case 'attribute_textures':
+                // Get all attributes for this combination
+                $sql = 'SELECT pac.`id_attribute`, a.`color`, ag.`is_color_group` 
+                        FROM `' . _DB_PREFIX_ . 'product_attribute_combination` pac
+                        LEFT JOIN `' . _DB_PREFIX_ . 'attribute` a ON a.`id_attribute` = pac.`id_attribute`
+                        LEFT JOIN `' . _DB_PREFIX_ . 'attribute_group` ag ON ag.`id_attribute_group` = a.`id_attribute_group`
+                        WHERE pac.`id_product_attribute` = ' . (int) $combination['id_product_attribute'];
+                
+                $attributes = Db::getInstance()->executeS($sql);
+                
+                if ($attributes) {
+                    $colors = [];
+                    $textures = [];
+                    
+                    foreach ($attributes as $attribute) {
+                        // Only process if it's a color group
+                        if ($attribute['is_color_group']) {
+                            if ($key == 'attribute_colors') {
+                                // Add hex color if available
+                                if (!empty($attribute['color'])) {
+                                    $colors[] = $attribute['color'];
+                                }
+                            } else { // attribute_textures
+                                // Check for texture image
+                                $texture_path = _PS_COL_IMG_DIR_ . $attribute['id_attribute'] . '.jpg';
+                                
+                                // Check different image formats
+                                $extensions = ['jpg', 'jpeg', 'png', 'gif'];
+                                $texture_url = '';
+                                
+                                foreach ($extensions as $ext) {
+                                    $check_path = _PS_COL_IMG_DIR_ . $attribute['id_attribute'] . '.' . $ext;
+                                    if (file_exists($check_path)) {
+                                        $texture_url = $context->link->getBaseLink() . 'img/co/' . $attribute['id_attribute'] . '.' . $ext;
+                                        break;
+                                    }
+                                }
+                                
+                                if ($texture_url) {
+                                    $textures[] = $texture_url;
+                                }
+                            }
+                        }
+                    }
+                    
+                    $value = $key == 'attribute_colors' 
+                        ? implode($this->multiple_value_separator, $colors)
+                        : implode($this->multiple_value_separator, $textures);
+                }
                 break;
             case 'supplier_reference':
                 $value = $combination['supplier_reference'];
