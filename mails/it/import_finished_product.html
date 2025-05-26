@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <title>Easy Import Module</title>
+        <!--[if !mso]><!-- -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--<![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="-webkit-text-size-adjust:none;background-color:#fff;width:650px;font-family:Open-sans, sans-serif;color:#555454;font-size:13px;line-height:18px;margin:auto">
+        <div>CRON ha terminato di importare prodotti per la regola <b>{rule_name}</b> su {shop_name}.
+            <br><br>
+            <table border="0" cellpadding="5" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>L'importazione è iniziata alle: </td>
+                        <td>{history_date_started}</td>
+                    </tr>
+                    <tr>
+                        <td>L'importazione è terminata alle: </td>
+                        <td>{history_date_ended}</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>Numero totale di prodotti dal file: </td>
+                        <td>{total_number_of_products}</td>
+                    </tr>
+                    <tr>
+                        <td>Numero di prodotti processati: </td>
+                        <td>{number_of_products_processed}</td>
+                    </tr>
+                    <tr>
+                        <td>Numero di prodotti creati: </td>
+                        <td>{number_of_products_created}</td>
+                    </tr>
+                    <tr>
+                        <td>Numero di prodotti aggiornati: </td>
+                        <td>{number_of_products_updated}</td>
+                    </tr>
+                    <tr>
+                        <td>Numero di prodotti eliminati: </td>
+                        <td>{number_of_products_deleted}</td>
+                    </tr>
+                </tbody>
+            </table>
+            {events_log}
+            {error_log}
+            <a href="{shop_url}" target="_blank">{shop_name}</a>
+        </div>
+    </body>
+</html>

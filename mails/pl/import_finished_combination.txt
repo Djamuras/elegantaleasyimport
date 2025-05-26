@@ -1,0 +1,14 @@
+CRON zakończył importowanie kombinacji dla reguły "{rule_name}" w {shop_name}. 
+
+Import rozpoczął się o: {history_date_started}
+Import zakończył się o: {history_date_ended}
+
+Całkowita ilość kombinacji z pliku: {total_number_of_products}
+Liczba przetworzonych kombinacji: {number_of_products_processed}
+Liczba utworzonych kombinacji: {number_of_products_created}
+Liczba zaktualizowanych kombinacji: {number_of_products_updated}
+Liczba usuniętych kombinacji: {number_of_products_deleted}
+{events_log}
+{error_log}
+
+{shop_name}

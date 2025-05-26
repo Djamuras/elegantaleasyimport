@@ -1,0 +1,10 @@
+Правило экспорта: {rule_name}
+
+{message}
+
+Экспорт начался с: {date_started}
+Экспорт завершен в: {date_ended}
+
+Ссылка для скачивания: {download_link}
+
+{shop_name}

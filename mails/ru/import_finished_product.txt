@@ -1,0 +1,14 @@
+CRON завершил импорт продуктов для правила "{rule_name}" в {shop_name}. 
+
+Импорт начался с: {history_date_started}
+Импорт завершен в: {history_date_ended}
+
+Общее количество продуктов из файла: {total_number_of_products}
+Количество обработанных продуктов: {number_of_products_processed}
+Количество созданных продуктов: {number_of_products_created}
+Количество обновленных продуктов: {number_of_products_updated}
+Количество удаленных продуктов: {number_of_products_deleted}
+{events_log}
+{error_log}
+
+{shop_name}

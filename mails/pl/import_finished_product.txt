@@ -1,0 +1,14 @@
+CRON zakończył import produktów dla reguły "{rule_name}" w {shop_name}. 
+
+Import rozpoczął się o: {history_date_started}
+Import zakończył się o: {history_date_ended}
+
+Łączna ilość produktów z pliku: {total_number_of_products}
+Ilość przetworzonych produktów: {number_of_products_processed}
+Liczba stworzonych produktów: {number_of_products_created}
+Liczba zaktualizowanych produktów: {number_of_products_updated}
+Liczba usuniętych produktów: {number_of_products_deleted}
+{events_log}
+{error_log}
+
+{shop_name}

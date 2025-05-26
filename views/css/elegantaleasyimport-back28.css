@@ -1,0 +1,487 @@
+/**
+ * @author    ELEGANTAL <info@elegantal.com>
+ * @copyright (c) 2025, ELEGANTAL <www.elegantal.com>
+ * @license   Proprietary License - It is forbidden to resell or redistribute copies of the module or modified copies of the module.
+ */
+
+/** General Bootstrap **/
+#content .elegantalBootstrapWrapper {
+    position: relative;
+}
+#content .elegantalBootstrapWrapper textarea {
+    min-height: 180px;
+    resize: vertical !important;
+}
+#content .elegantalBootstrapWrapper .help-block {
+    clear: both !important;
+}
+#content .elegantalBootstrapWrapper select[multiple] {
+    width: auto !important;
+    height: auto !important;
+    min-width: 400px;
+    min-height: 120px;
+}
+#content .elegantalBootstrapWrapper select[multiple] option {
+    width: 100%;
+}
+#content .elegantalBootstrapWrapper .fixed-width-xl {
+    width: 400px !important;
+}
+@media (max-width: 992px) {
+    #content .elegantalBootstrapWrapper select[multiple] {
+        min-width: 200px;
+        width: 100% !important;
+    }
+    #content .elegantalBootstrapWrapper .fixed-width-xl {
+        width: 100% !important;
+    }
+}
+
+#content .elegantalBootstrapWrapper .panel .panel-heading {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+#content .elegantalBootstrapWrapper .panel .panel-heading .panel-heading-action {
+    text-align: center;
+}
+#content .elegantalBootstrapWrapper .panel .panel-heading:after,
+#content .elegantalBootstrapWrapper .panel .panel-footer::after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+#content .elegantalBootstrapWrapper .panel .panel-footer {
+    overflow: visible !important;
+    height: auto !important;
+    padding: 15px;
+}
+#content .elegantalBootstrapWrapper .panel .panel-footer .btn {
+    font-size: 12px !important;
+    line-height: 1.6;
+    padding: 6px 10px;
+    margin: 0 3px;
+}
+#content .elegantalBootstrapWrapper .panel .panel-footer .btn i,
+#content .elegantalBootstrapWrapper .panel .panel-footer .btn-group i {
+    display: inline;
+}
+#content .elegantalBootstrapWrapper .panel .panel-footer [class^="process-icon-"] {
+    display: block !important;
+}
+#content .elegantalBootstrapWrapper .panel table td .btn-group i {
+    display: inline;
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+#content .elegantalBootstrapWrapper .btn,
+#content .elegantalBootstrapWrapper .table .btn-group .btn {
+    display: inline-block !important;
+}
+
+#content .elegantalBootstrapWrapper .btn-default:hover,
+#content .elegantalBootstrapWrapper .btn-default:focus,
+#content .elegantalBootstrapWrapper .btn-default:active,
+#content .elegantalBootstrapWrapper .btn-default.active {
+    color: #fff;
+    background-color: #889da2;
+    border-color: #889da2 !important;
+}
+#content .elegantalBootstrapWrapper .btn-default:hover i,
+#content .elegantalBootstrapWrapper .btn-default:focus i,
+#content .elegantalBootstrapWrapper .btn-default:active i,
+#content .elegantalBootstrapWrapper .btn-default.active i {
+    color: #fff;
+}
+#content .elegantalBootstrapWrapper .btn-default:active,
+#content .elegantalBootstrapWrapper .btn-default:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(136 157 162 / 50%);
+    box-shadow: 0 0 0 0.2rem rgb(136 157 162 / 50%);
+}
+#content .elegantalBootstrapWrapper .btn-group .btn-warning {
+    color: #fff;
+    background-color: #fbbb22;
+    border-color: #fbb309;
+}
+#content .elegantalBootstrapWrapper .btn-warning:hover,
+#content .elegantalBootstrapWrapper .btn-warning:focus,
+#content .elegantalBootstrapWrapper .btn-warning:active,
+#content .elegantalBootstrapWrapper .btn-warning.active {
+    color: #fff;
+    background-color: #e6a304;
+    border-color: #c38a04;
+}
+#content .elegantalBootstrapWrapper .btn-group .btn-success {
+    color: #fff;
+    background-color: #72c279;
+    border-color: #60ba68;
+}
+#content .elegantalBootstrapWrapper .btn-success:hover,
+#content .elegantalBootstrapWrapper .btn-success:focus,
+#content .elegantalBootstrapWrapper .btn-success:active,
+#content .elegantalBootstrapWrapper .btn-success.active {
+    color: #fff;
+    background-color: #4eb357;
+    border-color: #439a4a;
+}
+#content .elegantalBootstrapWrapper .btn-group .btn-danger {
+    color: #fff;
+    background-color: #e08f95;
+    border-color: #da7b82;
+}
+#content .elegantalBootstrapWrapper .btn-danger:hover,
+#content .elegantalBootstrapWrapper .btn-danger:focus,
+#content .elegantalBootstrapWrapper .btn-danger:active,
+#content .elegantalBootstrapWrapper .btn-danger.active {
+    color: #fff;
+    background-color: #d5676f;
+    border-color: #cd4b55;
+}
+#content .elegantalBootstrapWrapper .btn-group .caret {
+    -webkit-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+}
+#content .elegantalBootstrapWrapper .btn-group .btn-default .caret {
+    border-top-color: #6c868e !important;
+}
+#content .elegantalBootstrapWrapper .btn-group .btn-info .caret,
+#content .elegantalBootstrapWrapper .btn-group .btn-success .caret,
+#content .elegantalBootstrapWrapper .btn-group .btn-warning .caret,
+#content .elegantalBootstrapWrapper .btn-group .btn-danger .caret,
+#content .elegantalBootstrapWrapper .btn-group .btn-primary .caret,
+#content .elegantalBootstrapWrapper .btn-group .btn-default:hover .caret,
+#content .elegantalBootstrapWrapper .btn-group .btn-default:focus .caret,
+#content .elegantalBootstrapWrapper .btn-group .btn-default:active .caret {
+    border-top-color: #fff !important;
+}
+
+/** General ELEGANTAL **/
+#content .elegantalBootstrapWrapper .elegantal_hidden,
+#content .elegantalBootstrapWrapper .elegantaleasyimportJsDef {
+    display: none;
+}
+#content .elegantalBootstrapWrapper .elegantal_panel_footer .btn,
+#content .elegantalBootstrapWrapper .elegantal_panel_footer .btn-group {
+    float: right;
+}
+#content .elegantalBootstrapWrapper .alert.alert_with_link_icon:before {
+    content: "\F0C1";
+    font-size: 25px;
+    top: 15px;
+}
+
+/** List Page **/
+#content .elegantalBootstrapWrapper .panel .elegantal_panel_heading_version {
+    text-decoration: none;
+    float: right;
+    color: #aaa;
+    line-height: 1.2;
+    margin-top: 7px;
+}
+#content .elegantalBootstrapWrapper .panel .elegantal_panel_heading_version span {
+    text-transform: lowercase;
+    font-size: 12px;
+}
+#content .elegantalBootstrapWrapper .panel .panel-body {
+    padding: 15px 0;
+}
+#content .elegantalBootstrapWrapper .panel .elegantal_panel_footer .btn,
+#content .elegantalBootstrapWrapper .panel .panel-footer .btn-group.btn_group_primary ul li a {
+    text-transform: uppercase;
+}
+#content .elegantalBootstrapWrapper table tr td .btn {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#content .elegantalBootstrapWrapper .progress_label {
+    font-size: 10px !important;
+    padding: 2px 5px !important;
+    margin-left: 15px !important;
+}
+
+/** Import Steps **/
+#content .elegantalBootstrapWrapper .elegantal_steps {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+#content .elegantalBootstrapWrapper .elegantal_steps p {
+    margin-top: 10px;
+}
+#content .elegantalBootstrapWrapper .elegantal_steps-row {
+    display: table-row;
+}
+#content .elegantalBootstrapWrapper .elegantal_steps-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+#content .elegantalBootstrapWrapper .elegantal_steps-row:before {
+    top: 25px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e0;
+}
+#content .elegantalBootstrapWrapper .elegantal_steps-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+#content .elegantalBootstrapWrapper .btn-circle {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    line-height: 37px;
+    border-radius: 100%;
+    outline: none;
+    opacity: 1 !important;
+}
+#content .elegantalBootstrapWrapper .btn-circle:active,
+#content .elegantalBootstrapWrapper .btn-circle:active:focus,
+#content .elegantalBootstrapWrapper .btn-circle:focus {
+    outline: none;
+}
+
+/** Mapping Page **/
+#content form.elegantalBootstrapWrapper .panel .form-wrapper {
+    margin: 0;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+#content form div.form-group.elegantal_mapping_form_group > label.control-label {
+    text-transform: uppercase;
+}
+#content .elegantalBootstrapWrapper .elegantal_mapping_select {
+    width: 95%;
+}
+@media (max-width: 1200px) {
+    #content .elegantalBootstrapWrapper .elegantal_mapping_select {
+        width: 100%;
+    }
+}
+#elegantal_header_row {
+    display: none;
+}
+#content .elegantalBootstrapWrapper #elegantal_header_row {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+#content .elegantalBootstrapWrapper #elegantal_header_row > div {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: bottom;
+}
+#content .elegantalBootstrapWrapper #elegantal_header_row .input-group {
+    width: 90px;
+}
+#content .elegantalBootstrapWrapper #elegantal_header_row .input-group .btn {
+    padding: 4px 10px !important;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 1.2;
+    height: 28px;
+    top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#content .elegantalBootstrapWrapper #elegantal_header_row .input-group-btn:first-child > .btn {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+#content .elegantalBootstrapWrapper #elegantal_header_row .input-group-btn:last-child > .btn {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+#content .elegantalBootstrapWrapper #elegantal_header_row input[type="text"] {
+    text-align: center;
+    cursor: default;
+    height: 28px;
+    padding: 0;
+}
+#content .elegantalBootstrapWrapper .ignore_all_columns {
+    position: absolute;
+    display: inline-block;
+    bottom: -40px;
+    right: 0;
+    z-index: 99;
+    font-size: 12px;
+}
+#content .elegantalBootstrapWrapper button.elegantal_mapping_add {
+    position: absolute;
+    top: 0;
+    right: -42px;
+    width: 36px;
+    height: 39px;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 8px 12px 7px 12px;
+}
+#content .elegantalBootstrapWrapper .elegantal_lang_select {
+    position: absolute;
+    top: 0;
+    right: 4px;
+}
+@media (max-width: 1200px) {
+    #content .elegantalBootstrapWrapper .elegantal_lang_select {
+        margin: 4px 0;
+    }
+}
+#content .elegantalBootstrapWrapper .elegantal_lang_select > button {
+    padding: 10px 3px;
+    width: 39px;
+    height: 39px;
+}
+
+/** Manage Category Page **/
+#content .elegantalBootstrapWrapper .elegantal_categories_map_chooser {
+    margin-bottom: 10px;
+}
+#content .elegantalBootstrapWrapper .elegantal_categories_map {
+    margin-bottom: 10px;
+}
+#content .elegantalBootstrapWrapper .elegantal_categories_map:hover {
+    background-color: #eee;
+}
+#content .elegantalBootstrapWrapper .elegantal_categories_map_edit {
+    margin-left: 5px;
+    color: #8bacf4;
+}
+#content .elegantalBootstrapWrapper .elegantal_categories_map_remove {
+    margin-left: 5px;
+    color: #f27a7a;
+}
+#content .elegantalBootstrapWrapper .elegantal_categories_map_edit:hover {
+    color: #6078ac;
+}
+#content .elegantalBootstrapWrapper .elegantal_categories_map_remove:hover {
+    color: #b75a5a;
+}
+#content .elegantalBootstrapWrapper .elegantal_categories_map_hidden {
+    display: none;
+}
+#content .elegantalBootstrapWrapper .add_new_category_map {
+    padding: 8px 13px;
+    font-size: 14px;
+}
+#content .elegantalBootstrapWrapper .chosen-container {
+    max-width: 100%;
+}
+
+#content .elegantalBootstrapWrapper .panel .tree-actions input[type="text"].search-field {
+    height: 34px;
+}
+
+/** Import Page **/
+#content .elegantalBootstrapWrapper .elegantal_import_panel .panel-heading {
+    margin-bottom: 0 !important;
+}
+#content .elegantalBootstrapWrapper .elegantal_import_panel .panel-body {
+    padding: 0 !important;
+}
+#content .elegantalBootstrapWrapper .elegantal_import_timer {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    line-height: 30px;
+}
+#content .elegantalBootstrapWrapper .elegantal_import_panel .elegantal_import_stats {
+    margin: 0 15px;
+}
+#content .elegantalBootstrapWrapper .elegantal_import_panel .elegantal_import_stats > .row {
+    line-height: 30px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 5px 10px 0 10px;
+}
+#content .elegantalBootstrapWrapper .elegantal_import_panel .elegantal_import_stats > .row > div > span,
+#content .elegantalBootstrapWrapper .elegantal_import_panel .elegantal_import_stats > .row > div > a > span {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 5px;
+}
+@media (max-width: 992px) {
+    #content .elegantalBootstrapWrapper .elegantal_import_panel .elegantal_import_stats > .row > div > span,
+    #content .elegantalBootstrapWrapper .elegantal_import_panel .elegantal_import_stats > .row > div > a > span {
+        font-size: 14px;
+    }
+}
+#content .elegantalBootstrapWrapper .elegantal_import_errors_found_block a {
+    color: #f70011;
+}
+
+/** Export Page **/
+#content .elegantalBootstrapWrapper .elegantal_ajax_loader {
+    text-align: center;
+}
+#content .elegantalBootstrapWrapper a.checkUncheckAllColumns {
+    float: right;
+    padding: 0 10px;
+}
+#content .elegantalBootstrapWrapper a.checkUncheckAllColumns.checkedAllColumns {
+    color: #00aff0;
+}
+#content .elegantalBootstrapWrapper .panel .form-wrapper .form-group .prestashop-switch {
+    margin-top: 10px;
+}
+#content .export_columns_form .panel .form-wrapper .form-group label.control-label {
+    position: relative;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+}
+#content .export_columns_form .panel .form-wrapper .form-group:hover {
+    cursor: move;
+}
+#content .export_columns_form .panel .form-wrapper .form-group:hover label.control-label {
+    cursor: pointer;
+    text-decoration: dashed underline #649af7;
+}
+#content .export_columns_form .panel .form-wrapper .form-group:hover label.elegantal_columns_label_converted,
+#content .export_columns_form .panel .form-wrapper .form-group label.elegantal_columns_label_converted {
+    text-decoration: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#content .export_columns_form .panel .form-wrapper .form-group .elegantal_columns_icon_sort {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    padding: 14px 45px 11px 20px;
+    color: #aaa;
+    z-index: 10;
+}
+#content .export_columns_form .panel .form-wrapper .form-group:hover .elegantal_columns_icon_sort {
+    display: inline-block;
+}
+#content .export_columns_form .panel .form-wrapper .form-group .elegantal_columns_icon_edit {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 7px;
+    color: #649af7;
+}
+#content .export_columns_form .panel .form-wrapper .form-group:hover .elegantal_columns_icon_edit {
+    display: inline-block;
+}
+#content .export_columns_form .panel .form-wrapper .form-group button.elegantal_column_add {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 37px;
+    height: 39px;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 8px 12px 7px 12px;
+}

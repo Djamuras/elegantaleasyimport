@@ -1,0 +1,10 @@
+Règle d'exportation: {rule_name}
+
+{message}
+
+L'exportation a commencé à: {date_started}
+Exportation terminée à: {date_ended}
+
+Lien de téléchargement: {download_link}
+
+{shop_name}

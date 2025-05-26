@@ -1,0 +1,10 @@
+Exportregel: {rule_name}
+
+{message}
+
+Export gestartet um: {date_started}
+Export abgeschlossen um: {date_ended}
+
+Download-Link: {download_link}
+
+{shop_name}

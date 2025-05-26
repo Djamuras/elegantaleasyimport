@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRODUCTS>
+<PRODUCT>
+    <PRODUCT_ID>1</PRODUCT_ID>
+    <REFERENCE>demo_1</REFERENCE>
+    <NAME_1>Hummingbird printed t-shirt</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Regular fit, round neckline, short sleeves. Made of extra long staple pima cotton. </p>
+<p></p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>Symbol of lightness and delicacy, the hummingbird evokes curiosity and joy. Studio Design' PolyFaune collection features classic products with colorful patterns, inspired by the traditional japanese origamis. To wear with a chino or jeans. The sublimation textile printing process provides an exceptional color rendering and a color, guaranteed overtime.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Hummingbird printed t-shirt</META_TITLE_1>
+    <META_DESCRIPTION_1>Regular fit, round neckline, short sleeves. Made of extra long staple pima cotton. &#13;
+</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>hummingbird-printed-t-shirt</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>23.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>23.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT>20%</DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT>4.78</DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>2400</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Studio Design</MANUFACTURER>
+    <SUPPLIERS>Fashion supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_1_46</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Men</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Clothes|Men]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/1/hummingbird-printed-t-shirt.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/1/hummingbird-printed-t-shirt.jpg|https://prestashop.elegantal.com/2/hummingbird-printed-t-shirt.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Hummingbird printed t-shirt|Hummingbird printed t-shirt</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Cotton|Property:Short sleeves</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/1-hummingbird-printed-t-shirt.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>2</PRODUCT_ID>
+    <REFERENCE>demo_3</REFERENCE>
+    <NAME_1>Hummingbird printed sweater</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Regular fit, round neckline, long sleeves. 100% cotton, brushed inner side for extra comfort. </p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>Studio Design' PolyFaune collection features classic products with colorful patterns, inspired by the traditional japanese origamis. To wear with a chino or jeans. The sublimation textile printing process provides an exceptional color rendering and a color, guaranteed overtime.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Hummingbird printed sweater</META_TITLE_1>
+    <META_DESCRIPTION_1>Regular fit, round neckline, long sleeves. 100% cotton, brushed inner side for extra comfort. </META_DESCRIPTION_1>
+    <LINK_REWRITE_1>hummingbird-printed-sweater</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>35.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>35.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT>20%</DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT>7.18</DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>2100</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Studio Design</MANUFACTURER>
+    <SUPPLIERS>Fashion supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_3_62</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Women</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Clothes|Women]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/21/hummingbird-printed-sweater.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/21/hummingbird-printed-sweater.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Brown bear printed sweater</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Cotton|Property:Long sleeves</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/2-hummingbird-printed-sweater.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>3</PRODUCT_ID>
+    <REFERENCE>demo_6</REFERENCE>
+    <NAME_1><![CDATA[The best is yet to come' Framed poster]]></NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Printed on rigid matt paper and smooth surface.</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The best is yet to come! Give your walls a voice with a framed poster. This aesthethic, optimistic poster will look great in your desk or in an open-space office. Painted wooden frame with passe-partout for more depth.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1><![CDATA[The best is yet to come' Framed poster]]></META_TITLE_1>
+    <META_DESCRIPTION_1>Printed on rigid matt paper and smooth surface.</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>the-best-is-yet-to-come-framed-poster</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>29</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>29</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>1500</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Graphic Corner</MANUFACTURER>
+    <SUPPLIERS>Fashion supplier|Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_6_70|demo_6_70</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000|2.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Art</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Art]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/3/the-best-is-yet-to-come-framed-poster.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/3/the-best-is-yet-to-come-framed-poster.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS><![CDATA[The best is yet to come' Framed poster]]></IMAGE_CAPTIONS>
+    <FEATURES>Composition:Matt paper</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/3-the-best-is-yet-to-come-framed-poster.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>4</PRODUCT_ID>
+    <REFERENCE>demo_5</REFERENCE>
+    <NAME_1>The adventure begins Framed poster</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Printed on rigid matt finish and smooth surface.</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The best is yet to come! Give your walls a voice with a framed poster. This aesthethic, optimistic poster will look great in your desk or in an open-space office. Painted wooden frame with passe-partout for more depth.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>The adventure begins Framed poster</META_TITLE_1>
+    <META_DESCRIPTION_1>Printed on rigid matt finish and smooth surface.</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>the-adventure-begins-framed-poster</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>29</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>29</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>1500</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Graphic Corner</MANUFACTURER>
+    <SUPPLIERS>Fashion supplier|Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_5_73|demo_5_73</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000|2.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Art</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Art]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/4/the-adventure-begins-framed-poster.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/4/the-adventure-begins-framed-poster.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>The adventure begins Framed poster</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Matt paper</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/4-the-adventure-begins-framed-poster.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>5</PRODUCT_ID>
+    <REFERENCE>demo_7</REFERENCE>
+    <NAME_1>Today is a good day Framed poster</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Printed on rigid paper with matt finish and smooth surface.</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The best is yet to come! Give your walls a voice with a framed poster. This aesthethic, optimistic poster will look great in your desk or in an open-space office. Painted wooden frame with passe-partout for more depth.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Today is a good day Framed poster</META_TITLE_1>
+    <META_DESCRIPTION_1>Printed on rigid paper with matt finish and smooth surface.</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>today-is-a-good-day-framed-poster</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>29</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>29</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>900</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Graphic Corner</MANUFACTURER>
+    <SUPPLIERS>Fashion supplier|Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_5_76|demo_5_76</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000|2.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Art</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Art]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/5/today-is-a-good-day-framed-poster.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/5/today-is-a-good-day-framed-poster.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Today is a good day Framed poster</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Matt paper</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/5-today-is-a-good-day-framed-poster.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>6</PRODUCT_ID>
+    <REFERENCE>demo_11</REFERENCE>
+    <NAME_1>Mug The best is yet to come</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>White Ceramic Mug, 325ml.</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The best is yet to come! Start the day off right with a positive thought. 8,2cm diameter / 9,5cm height / 0.43kg. Dishwasher-proof.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Mug The best is yet to come</META_TITLE_1>
+    <META_DESCRIPTION_1>White Ceramic Mug, 325ml.</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>mug-the-best-is-yet-to-come</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>11.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>11.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>300</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Studio Design</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_11</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Home Accessories</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Home Accessories]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/6/mug-the-best-is-yet-to-come.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/6/mug-the-best-is-yet-to-come.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Mug The best is yet to come</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Ceramic</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/6-mug-the-best-is-yet-to-come.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>7</PRODUCT_ID>
+    <REFERENCE>demo_12</REFERENCE>
+    <NAME_1>Mug The adventure begins</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>White Ceramic Mug. 325ml</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The adventure begins with a cup of coffee. Set out to conquer the day! 8,2cm diameter / 9,5cm height / 0.43kg. Dishwasher-proof.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Mug The adventure begins</META_TITLE_1>
+    <META_DESCRIPTION_1>White Ceramic Mug. 325ml</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>mug-the-adventure-begins</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>11.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>11.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>300</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Studio Design</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_12</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Home Accessories</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Home Accessories]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/7/mug-the-adventure-begins.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/7/mug-the-adventure-begins.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Mug The adventure begins</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Ceramic</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/7-mug-the-adventure-begins.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>8</PRODUCT_ID>
+    <REFERENCE>demo_13</REFERENCE>
+    <NAME_1>Mug Today is a good day</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>White Ceramic Mug. 325ml</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>Add an optimistic touch to your morning coffee and start the day in a good mood! 8,2cm diameter / 9,5cm height / 0.43kg. Dishwasher-proof.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Mug Today is a good day</META_TITLE_1>
+    <META_DESCRIPTION_1>White Ceramic Mug. 325ml</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>mug-today-is-a-good-day</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>11.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>11.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>300</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Studio Design</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_13</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Home Accessories</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Home Accessories]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/8/mug-today-is-a-good-day.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/8/mug-today-is-a-good-day.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Mug Today is a good day</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Ceramic</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/8-mug-today-is-a-good-day.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>9</PRODUCT_ID>
+    <REFERENCE>demo_15</REFERENCE>
+    <NAME_1>Mountain fox cushion</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Cushion with removable cover and invisible zip on the back. 32x32cm</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The mountain fox cushion will add a graphic and colorful touch to your sofa, armchair or bed. Create a modern and zen atmosphere that inspires relaxation. Cover 100% cotton, machine washable at 60° / Filling 100% hypoallergenic polyester.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Mountain fox cushion</META_TITLE_1>
+    <META_DESCRIPTION_1>Cushion with removable cover and invisible zip on the back. 32x32cm</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>mountain-fox-cushion</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>18.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>18.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>600</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Studio Design</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_15_79</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Home Accessories</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Home Accessories]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/9/mountain-fox-cushion.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/9/mountain-fox-cushion.jpg|https://prestashop.elegantal.com/10/mountain-fox-cushion.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Mountain fox cushion|Mountain fox cushion</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Polyester|Property:Removable cover</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/9-mountain-fox-cushion.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>10</PRODUCT_ID>
+    <REFERENCE>demo_16</REFERENCE>
+    <NAME_1>Brown bear cushion</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Cushion with removable cover and invisible zip on the back. 32x32cm</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The brown bear cushion will add a graphic and colorful touch to your sofa, armchair or bed. Create a modern and zen atmosphere that inspires relaxation. Cover 100% cotton, machine washable at 60° / Filling 100% hypoallergenic polyester.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Brown bear cushion</META_TITLE_1>
+    <META_DESCRIPTION_1>Cushion with removable cover and invisible zip on the back. 32x32cm</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>brown-bear-cushion</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>18.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>18.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>600</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Studio Design</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_16_81</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Home Accessories</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Home Accessories]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/11/brown-bear-cushion.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/11/brown-bear-cushion.jpg|https://prestashop.elegantal.com/12/brown-bear-cushion.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Brown bear cushion|Brown bear cushion</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Polyester|Property:Removable cover</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/10-brown-bear-cushion.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>11</PRODUCT_ID>
+    <REFERENCE>demo_17</REFERENCE>
+    <NAME_1>Hummingbird cushion</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Cushion with removable cover and invisible zip on the back. 32x32cm</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The hummingbird cushion will add a graphic and colorful touch to your sofa, armchair or bed. Create a modern and zen atmosphere that inspires relaxation. Cover 100% cotton, machine washable at 60° / Filling 100% hypoallergenic polyester.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Hummingbird cushion</META_TITLE_1>
+    <META_DESCRIPTION_1>Cushion with removable cover and invisible zip on the back. 32x32cm</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>hummingbird-cushion</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>18.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>18.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>600</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Studio Design</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_17_83</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Home Accessories</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Home Accessories]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/13/hummingbird-cushion.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/13/hummingbird-cushion.jpg|https://prestashop.elegantal.com/14/hummingbird-cushion.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Hummingbird cushion|Hummingbird cushion</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Polyester|Property:Removable cover</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/11-hummingbird-cushion.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>12</PRODUCT_ID>
+    <REFERENCE>demo_18</REFERENCE>
+    <NAME_1>Mountain fox - Vector graphics</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Vector graphic, format: svg. Download for personal, private and non-commercial use.</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>You have a custom printing creative project? The vector graphic Mountain fox illustration can be used for printing purpose on any support, without size limitation. </p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Mountain fox - Vector graphics</META_TITLE_1>
+    <META_DESCRIPTION_1>Vector graphic, format: svg. Download for personal, private and non-commercial use.</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>mountain-fox-vector-graphics</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>300</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Graphic Corner</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_18</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Art</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Art]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/15/mountain-fox-vector-graphics.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/15/mountain-fox-vector-graphics.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Mountain fox - Vector graphics</IMAGE_CAPTIONS>
+    <FEATURES></FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/12-mountain-fox-vector-graphics.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>1</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>13</PRODUCT_ID>
+    <REFERENCE>demo_19</REFERENCE>
+    <NAME_1>Brown bear - Vector graphics</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Vector graphic, format: svg. Download for personal, private and non-commercial use.</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>You have a custom printing creative project? The vector graphic Mountain fox illustration can be used for printing purpose on any support, without size limitation. </p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Brown bear - Vector graphics</META_TITLE_1>
+    <META_DESCRIPTION_1>Vector graphic, format: svg. Download for personal, private and non-commercial use.</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>brown-bear-vector-graphics</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>300</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Graphic Corner</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_19</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Art</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Art]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/16/brown-bear-vector-graphics.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/16/brown-bear-vector-graphics.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Brown bear - Vector graphics</IMAGE_CAPTIONS>
+    <FEATURES></FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/13-brown-bear-vector-graphics.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>1</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>14</PRODUCT_ID>
+    <REFERENCE>demo_20</REFERENCE>
+    <NAME_1>Hummingbird - Vector graphics</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Vector graphic, format: svg. Download for personal, private and non-commercial use.</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>You have a custom printing creative project? The vector graphic Mountain fox illustration can be used for printing purpose on any support, without size limitation. </p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Hummingbird - Vector graphics</META_TITLE_1>
+    <META_DESCRIPTION_1>Vector graphic, format: svg. Download for personal, private and non-commercial use.</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>hummingbird-vector-graphics</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>300</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Graphic Corner</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_20</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Art</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Art]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/17/hummingbird-vector-graphics.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/17/hummingbird-vector-graphics.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Hummingbird - Vector graphics</IMAGE_CAPTIONS>
+    <FEATURES></FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/14-hummingbird-vector-graphics.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>1</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>15</PRODUCT_ID>
+    <REFERENCE>demo_21</REFERENCE>
+    <NAME_1><![CDATA[Pack Mug + Framed poster]]></NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>Mug The Adventure Begins + Framed poster Today is a good day 40x60cm </p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1></DESCRIPTION_1>
+    <META_TITLE_1><![CDATA[Pack Mug + Framed poster]]></META_TITLE_1>
+    <META_DESCRIPTION_1><![CDATA[Mug The Adventure Begins + Framed poster Today is a good day 40x60cm ]]></META_DESCRIPTION_1>
+    <LINK_REWRITE_1>pack-mug-framed-poster</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>35</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>35</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>100</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER></MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE></SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>0.000000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Home Accessories</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Home Accessories]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/23/pack-mug-framed-poster.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/23/pack-mug-framed-poster.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS><![CDATA[Pack Mug + Framed poster]]></IMAGE_CAPTIONS>
+    <FEATURES></FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/15-pack-mug-framed-poster.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>16</PRODUCT_ID>
+    <REFERENCE>demo_8</REFERENCE>
+    <NAME_1>Mountain fox notebook</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>120 sheets notebook with hard cover made of recycled cardboard. 16x22cm</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The Mountain fox notebook is the best option to write down your most ingenious ideas. At work, at home or when traveling, its endearing design and manufacturing quality will make you feel like writing! 90 gsm paper / double spiral binding.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Mountain fox notebook</META_TITLE_1>
+    <META_DESCRIPTION_1>120 sheets notebook with hard cover made of recycled cardboard. 16x22cm</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>mountain-fox-notebook</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>12.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>12.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>1200</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Graphic Corner</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_8_85</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Stationery</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Stationery]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/18/mountain-fox-notebook.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/18/mountain-fox-notebook.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Mountain fox notebook</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Recycled cardboard|Property:120 pages</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/16-mountain-fox-notebook.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>17</PRODUCT_ID>
+    <REFERENCE>demo_9</REFERENCE>
+    <NAME_1>Brown bear notebook</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>120 sheets notebook with hard cover made of recycled cardboard. 16x22cm</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The Mountain fox notebook is the best option to write down your most ingenious ideas. At work, at home or when traveling, its endearing design and manufacturing quality will make you feel like writing! 90 gsm paper / double spiral binding.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Brown bear notebook</META_TITLE_1>
+    <META_DESCRIPTION_1>120 sheets notebook with hard cover made of recycled cardboard. 16x22cm</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>brown-bear-notebook</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>12.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>12.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>1200</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Graphic Corner</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_9_89</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Stationery</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Stationery]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/19/brown-bear-notebook.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/19/brown-bear-notebook.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Mountain fox notebook</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Recycled cardboard|Property:120 pages</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/17-brown-bear-notebook.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>18</PRODUCT_ID>
+    <REFERENCE>demo_10</REFERENCE>
+    <NAME_1>Hummingbird notebook</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>120 sheets notebook with hard cover made of recycled cardboard. 16x22cm</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>The Mountain fox notebook is the best option to write down your most ingenious ideas. At work, at home or when traveling, its endearing design and manufacturing quality will make you feel like writing! 90 gsm paper / double spiral binding.</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Hummingbird notebook</META_TITLE_1>
+    <META_DESCRIPTION_1>120 sheets notebook with hard cover made of recycled cardboard. 16x22cm</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>hummingbird-notebook</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>12.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>12.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>1200</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Graphic Corner</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_10_93</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Stationery</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Stationery]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/20/hummingbird-notebook.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/20/hummingbird-notebook.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Mountain fox notebook</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Recycled cardboard|Property:120 pages</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/18-hummingbird-notebook.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+<PRODUCT>
+    <PRODUCT_ID>19</PRODUCT_ID>
+    <REFERENCE>demo_14</REFERENCE>
+    <NAME_1>Customizable mug</NAME_1>
+    <ACTIVE>1</ACTIVE>
+    <DESCRIPTION_SHORT_1><![CDATA[<p>White Ceramic Mug. 325ml</p>]]></DESCRIPTION_SHORT_1>
+    <DESCRIPTION_1><![CDATA[<p>Customize your mug with the text of your choice. A mood, a message, a quote... It's up to you! Maximum number of characters: ---</p>]]></DESCRIPTION_1>
+    <META_TITLE_1>Customizable mug</META_TITLE_1>
+    <META_DESCRIPTION_1>White Ceramic Mug. 325ml</META_DESCRIPTION_1>
+    <LINK_REWRITE_1>customizable-mug</LINK_REWRITE_1>
+    <PRICE_TAX_EXCLUDED>13.9</PRICE_TAX_EXCLUDED>
+    <PRICE_TAX_INCLUDED>13.9</PRICE_TAX_INCLUDED>
+    <DISCOUNT_PERCENT></DISCOUNT_PERCENT>
+    <DISCOUNT_AMOUNT></DISCOUNT_AMOUNT>
+    <TAX_RULE>US-FL Rate (6%)</TAX_RULE>
+    <QUANTITY>300</QUANTITY>
+    <MINIMAL_QUANTITY>1</MINIMAL_QUANTITY>
+    <MANUFACTURER>Studio Design</MANUFACTURER>
+    <SUPPLIERS>Accessories supplier</SUPPLIERS>
+    <SUPPLIER_REFERENCE>demo_14</SUPPLIER_REFERENCE>
+    <SUPPLIER_PRICE>5.490000</SUPPLIER_PRICE>
+    <DEFAULT_CATEGORY>Home Accessories</DEFAULT_CATEGORY>
+    <CATEGORIES><![CDATA[Accessories|Home Accessories]]></CATEGORIES>
+    <COVER_IMAGE><![CDATA[https://prestashop.elegantal.com/22/customizable-mug.jpg]]></COVER_IMAGE>
+    <IMAGES><![CDATA[https://prestashop.elegantal.com/22/customizable-mug.jpg]]></IMAGES>
+    <IMAGE_CAPTIONS>Customizable mug</IMAGE_CAPTIONS>
+    <FEATURES>Composition:Ceramic</FEATURES>
+    <ATTACHMENTS></ATTACHMENTS>
+    <PRODUCT_URL><![CDATA[https://prestashop.elegantal.com/en/19-customizable-mug.html]]></PRODUCT_URL>
+    <VISIBILITY>both</VISIBILITY>
+    <AVAILABLE_FOR_ORDER>1</AVAILABLE_FOR_ORDER>
+    <SHOW_PRICE>1</SHOW_PRICE>
+    <ON_SALE>0</ON_SALE>
+    <CONDITION>new</CONDITION>
+    <EAN></EAN>
+    <UPC></UPC>
+    <ISBN></ISBN>
+    <MPN></MPN>
+    <WIDTH>0.000000</WIDTH>
+    <HEIGHT>0.000000</HEIGHT>
+    <DEPTH>0.000000</DEPTH>
+    <WEIGHT>0.300000</WEIGHT>
+    <ACTION_WHEN_OUT_OF_STOCK>2</ACTION_WHEN_OUT_OF_STOCK>
+</PRODUCT>
+</PRODUCTS>

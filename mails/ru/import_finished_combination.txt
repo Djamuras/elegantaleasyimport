@@ -1,0 +1,14 @@
+CRON завершил импорт комбинаций для правила "{rule_name}" в {shop_name}. 
+
+Импорт начался с: {history_date_started}
+Импорт завершен в: {history_date_ended}
+
+Общее количество комбинаций из файла: {total_number_of_products}
+Количество обработанных комбинаций: {number_of_products_processed}
+Количество созданных комбинаций: {number_of_products_created}
+Количество обновленных комбинаций: {number_of_products_updated}
+Количество удаленных комбинаций: {number_of_products_deleted}
+{events_log}
+{error_log}
+
+{shop_name}

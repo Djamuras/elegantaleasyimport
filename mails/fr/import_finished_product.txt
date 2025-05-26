@@ -1,0 +1,14 @@
+CRON a fini d'importer les produits pour la règle "{rule_name}" en {shop_name}. 
+
+L'importation a commencé à: {history_date_started}
+Importation terminée à: {history_date_ended}
+
+Nombre total de produits du fichier: {total_number_of_products}
+Nombre de produits traités: {number_of_products_processed}
+Nombre de produits créés: {number_of_products_created}
+Nombre de produits actualisés: {number_of_products_updated}
+Nombre de produits supprimés: {number_of_products_deleted}
+{events_log}
+{error_log}
+
+{shop_name}

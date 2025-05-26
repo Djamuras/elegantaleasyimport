@@ -1,0 +1,14 @@
+CRON ha terminado de importar combinaciones para la regla "{rule_name}" en {shop_name}. 
+
+La importación comenzó en: {history_date_started}
+Importación finalizada en: {history_date_ended}
+
+Número total de combinaciones del archivo: {total_number_of_products}
+Número de combinaciones procesadas: {number_of_products_processed}
+Número de combinaciones creadas: {number_of_products_created}
+Número de combinaciones actualizadas: {number_of_products_updated}
+Número de combinaciones eliminadas: {number_of_products_deleted}
+{events_log}
+{error_log}
+
+{shop_name}
