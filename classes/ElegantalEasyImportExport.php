@@ -1502,7 +1502,6 @@ class ElegantalEasyImportExport extends ElegantalEasyImportObjectModel
                 $value = $combination['Values'];
                 break;
             case 'attribute_colors':
-                // Get all attributes for this combination with color information
                 $sql = 'SELECT pac.`id_attribute`, a.`color`, ag.`is_color_group`, al.`name`
                         FROM `' . _DB_PREFIX_ . 'product_attribute_combination` pac
                         LEFT JOIN `' . _DB_PREFIX_ . 'attribute` a ON a.`id_attribute` = pac.`id_attribute`
@@ -1516,7 +1515,6 @@ class ElegantalEasyImportExport extends ElegantalEasyImportObjectModel
                     $colors = [];
                     
                     foreach ($attributes as $attribute) {
-                        // Only process if it's a color group and has a color value
                         if ($attribute['is_color_group'] && !empty($attribute['color'])) {
                             $colors[] = $attribute['color'];
                         }
@@ -1526,7 +1524,6 @@ class ElegantalEasyImportExport extends ElegantalEasyImportObjectModel
                 }
                 break;
             case 'attribute_textures':
-                // Get all attributes for this combination
                 $sql = 'SELECT pac.`id_attribute`, a.`color`, ag.`is_color_group` 
                         FROM `' . _DB_PREFIX_ . 'product_attribute_combination` pac
                         LEFT JOIN `' . _DB_PREFIX_ . 'attribute` a ON a.`id_attribute` = pac.`id_attribute`
@@ -1540,18 +1537,14 @@ class ElegantalEasyImportExport extends ElegantalEasyImportObjectModel
                     $textures = [];
                     
                     foreach ($attributes as $attribute) {
-                        // Only process if it's a color group
                         if ($attribute['is_color_group']) {
                             if ($key == 'attribute_colors') {
-                                // Add hex color if available
                                 if (!empty($attribute['color'])) {
                                     $colors[] = $attribute['color'];
                                 }
                             } else { // attribute_textures
-                                // Check for texture image
                                 $texture_path = _PS_COL_IMG_DIR_ . $attribute['id_attribute'] . '.jpg';
                                 
-                                // Check different image formats
                                 $extensions = ['jpg', 'jpeg', 'png', 'gif'];
                                 $texture_url = '';
                                 
