@@ -575,7 +575,10 @@ class ElegantalEasyImportTools
     public static function copyImg($id_product, $image, $url, $username = null, $password = null, $convert_to = null)
     {
         // $url = urldecode(trim($url));
-        $tmp_file = self::getTempDir() . '/' . rand(1000, 1000000) . '.' . pathinfo($url, PATHINFO_EXTENSION);
+        $url_parts = parse_url($url);
+        $path_only = $url_parts['path'];
+        $extension = pathinfo($path_only, PATHINFO_EXTENSION);
+        $tmp_file = self::getTempDir() . '/' . rand(1000, 1000000) . '.' . $extension;
         $watermark_types = explode(',', Configuration::get('WATERMARK_TYPES'));
         $path = $image->getPathForCreation();
         $context = Context::getContext();
