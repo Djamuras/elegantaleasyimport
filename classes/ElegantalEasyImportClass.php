@@ -426,7 +426,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                         if ($this->find_products_by == 'supplier_reference' || $this->supplier_id) {
                             $sql .= 'INNER JOIN `' . _DB_PREFIX_ . 'product_supplier` ps ON (ps.`id_product` = p.`id_product` AND ps.`id_product_attribute` = 0) ';
                         }
-                        $sql .= 'WHERE ' . $id_reference_column . " = '" . pSQL($id_reference) . "' ";
+                        $sql .= 'WHERE (' . $id_reference_column . " = '" . pSQL($id_reference) . "' OR " . $id_reference_column . " = '" . pSQL('MERGED_' . $id_reference) . "') ";
                         if ($this->supplier_id) {
                             $sql .= 'AND ps.`id_supplier` = ' . (int) $this->supplier_id . ' ';
                         }
@@ -450,7 +450,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                             // No need for AND ps.`id_product_attribute` = pa.`id_product_attribute`
                             $sql .= 'INNER JOIN `' . _DB_PREFIX_ . 'product_supplier` ps ON (ps.`id_product` = pa.`id_product`) ';
                         }
-                        $sql .= 'WHERE pa.`id_product` > 0 AND ' . $id_reference_comb_column . " = '" . pSQL($id_reference_comb) . "' ";
+                        $sql .= 'WHERE pa.`id_product` > 0 AND (' . $id_reference_comb_column . " = '" . pSQL($id_reference_comb) . "' OR " . $id_reference_comb_column . " = '" . pSQL('MERGED_' . $id_reference_comb) . "') ";
                         if ($this->supplier_id) {
                             $sql .= 'AND ps.`id_supplier` = ' . (int) $this->supplier_id . ' ';
                         }
@@ -460,7 +460,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                             if (!$update_products_on_all_shops) {
                                 $sql .= 'INNER JOIN `' . _DB_PREFIX_ . 'product_attribute_shop` pash ON (pash.`id_product_attribute` = ps.`id_product_attribute` AND pash.`id_shop` = ' . (int) $id_shop . ') ';
                             }
-                            $sql .= "WHERE ps.`id_product_attribute` > 0 AND ps.`product_supplier_reference` = '" . pSQL($id_reference_comb) . "' ";
+                            $sql .= "WHERE ps.`id_product_attribute` > 0 AND (ps.`product_supplier_reference` = '" . pSQL($id_reference_comb) . "' OR ps.`product_supplier_reference` = '" . pSQL('MERGED_' . $id_reference_comb) . "') ";
                             if ($this->supplier_id) {
                                 $sql .= 'AND ps.`id_supplier` = ' . (int) $this->supplier_id . ' ';
                             }
@@ -1190,7 +1190,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                 if ($this->find_products_by == 'supplier_reference' || $this->supplier_id) {
                     $sql .= 'INNER JOIN `' . _DB_PREFIX_ . 'product_supplier` ps ON (ps.`id_product` = p.`id_product` AND ps.`id_product_attribute` = 0) ';
                 }
-                $sql .= 'WHERE ' . $id_reference_column . " = '" . pSQL($id_reference) . "' ";
+                $sql .= 'WHERE (' . $id_reference_column . " = '" . pSQL($id_reference) . "' OR " . $id_reference_column . " = '" . pSQL('MERGED_' . $id_reference) . "') ";
                 if ($this->supplier_id) {
                     $sql .= 'AND ps.`id_supplier` = ' . (int) $this->supplier_id . ' ';
                 }
@@ -1207,7 +1207,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                     if ($this->find_products_by == 'supplier_reference' || $this->supplier_id) {
                         $sql .= 'INNER JOIN `' . _DB_PREFIX_ . 'product_supplier` ps ON (ps.`id_product` = p.`id_product` AND ps.`id_product_attribute` = 0) ';
                     }
-                    $sql .= 'WHERE ' . $id_reference_column . " = '" . pSQL($id_reference) . "' AND psh.`id_shop` != " . (int) $id_shop;
+                    $sql .= 'WHERE (' . $id_reference_column . " = '" . pSQL($id_reference) . "' OR " . $id_reference_column . " = '" . pSQL('MERGED_' . $id_reference) . "') AND psh.`id_shop` != " . (int) $id_shop;
                     $product_exists_in_other_shop = Db::getInstance()->getRow($sql);
                     if ($product_exists_in_other_shop) {
                         unset($product_exists_in_other_shop['id_shop']);
@@ -3055,7 +3055,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                 if ($this->find_products_by == 'supplier_reference' || $this->supplier_id) {
                     $sql .= 'INNER JOIN `' . _DB_PREFIX_ . 'product_supplier` ps ON (ps.`id_product` = p.`id_product` AND ps.`id_product_attribute` = 0) ';
                 }
-                $sql .= 'WHERE ' . $id_reference_column . " = '" . pSQL($id_reference) . "' ";
+                $sql .= 'WHERE (' . $id_reference_column . " = '" . pSQL($id_reference) . "' OR " . $id_reference_column . " = '" . pSQL('MERGED_' . $id_reference) . "') ";
                 if ($this->supplier_id) {
                     $sql .= 'AND ps.`id_supplier` = ' . (int) $this->supplier_id . ' ';
                 }
@@ -3070,7 +3070,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                     // No need for AND ps.`id_product_attribute` = pa.`id_product_attribute`
                     $sql .= 'INNER JOIN `' . _DB_PREFIX_ . 'product_supplier` ps ON (ps.`id_product` = pa.`id_product`) ';
                 }
-                $sql .= 'WHERE pa.`id_product` > 0 AND ' . $id_reference_comb_column . " = '" . pSQL($id_reference_comb) . "' ";
+                $sql .= 'WHERE pa.`id_product` > 0 AND (' . $id_reference_comb_column . " = '" . pSQL($id_reference_comb) . "' OR " . $id_reference_comb_column . " = '" . pSQL('MERGED_' . $id_reference_comb) . "') ";
                 if ($this->supplier_id) {
                     $sql .= 'AND ps.`id_supplier` = ' . (int) $this->supplier_id . ' ';
                 }
@@ -3081,7 +3081,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                     if (!$update_products_on_all_shops) {
                         $sql .= 'INNER JOIN `' . _DB_PREFIX_ . 'product_attribute_shop` pash ON (pash.`id_product_attribute` = ps.`id_product_attribute` AND pash.`id_shop` = ' . (int) $id_shop . ') ';
                     }
-                    $sql .= "WHERE ps.`id_product_attribute` > 0 AND ps.`product_supplier_reference` = '" . pSQL($id_reference_comb) . "' ";
+                    $sql .= "WHERE ps.`id_product_attribute` > 0 AND (ps.`product_supplier_reference` = '" . pSQL($id_reference_comb) . "' OR ps.`product_supplier_reference` = '" . pSQL('MERGED_' . $id_reference_comb) . "') ";
                     if ($this->supplier_id) {
                         $sql .= 'AND ps.`id_supplier` = ' . (int) $this->supplier_id . ' ';
                     }
