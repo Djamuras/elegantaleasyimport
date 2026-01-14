@@ -174,6 +174,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
     protected $id_lang_default = 1;
     protected $id_all_langs = [];
     protected $id_other_langs = [];
+    protected $deleted_references_table_exists = null;
 
     /**
      * Import Types
@@ -413,6 +414,12 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
             if (!$this->create_new_products || !$this->update_existing_products || ($this->create_new_products && $this->skip_if_no_stock)) {
                 $quantity = (isset($data[$map['quantity']]) && $data[$map['quantity']]) ? trim($data[$map['quantity']]) : trim($map_default_values['quantity']);
                 $quantity = (int) $this->getDictionaryValue('quantity', $quantity, $data, $csv_header);
+
+                // Check if reference is blocked in deleted references table
+                if ($this->isReferenceBlocked($id_reference, 'product')) {
+                    continue;
+                }
+
                 if ($this->entity == 'product') {
                     $product_exists = false;
                     if ($id_reference) {
@@ -439,6 +446,12 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                         continue;
                     }
                 } elseif ($this->entity == 'combination') {
+
+                    // Check if combination reference is blocked in deleted references table
+                    if ($this->isReferenceBlocked($id_reference_comb, 'combination')) {
+                        continue;
+                    }
+
                     $combination_exists = false;
                     if ($id_reference_comb) {
                         $sql = 'SELECT DISTINCT pa.`id_product_attribute` FROM `' . _DB_PREFIX_ . 'product_attribute` pa ';
@@ -1164,6 +1177,11 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
 
             $id_reference = isset($line[$map['id_reference']]) ? $line[$map['id_reference']] : '';
             $this->current_id_reference = $id_reference;
+
+            // Check if reference is blocked in deleted references table
+            if ($this->isReferenceBlocked($id_reference, 'product')) {
+                continue;
+            }
 
             // If shop is given in import file, use it for the context
             $shop_map = (isset($line[$map['shop']]) && $line[$map['shop']]) ? $line[$map['shop']] : $map_default_values['shop'];
@@ -3028,6 +3046,14 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
             $this->current_id_reference = $id_reference;
 
             $id_reference_comb = isset($line[$map['id_reference_comb']]) ? $line[$map['id_reference_comb']] : '';
+
+            // Check if product or combination reference is blocked in deleted references table
+            if ($this->isReferenceBlocked($id_reference, 'product')) {
+                continue;
+            }
+            if ($this->isReferenceBlocked($id_reference_comb, 'combination')) {
+                continue;
+            }
 
             // If shop is given in import file, use it for the context
             $shop_map = (isset($line[$map['shop']]) && $line[$map['shop']]) ? $line[$map['shop']] : $map_default_values['shop'];
@@ -6657,5 +6683,40 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
         }
 
         return true;
+    }
+
+
+    /**
+     * Check if reference is blocked in deleted references table
+     *
+     * @param string $reference
+     * @param string $type 'product' or 'combination'
+     * @return bool
+    */
+    protected function isReferenceBlocked($reference, $type = 'product')
+    {
+        if (empty($reference)) {
+            return false;
+        }
+
+        // Check if table exists (only once)
+        if ($this->deleted_references_table_exists === null) {
+            $table_name = _DB_PREFIX_ . 'product_combiner_deleted_references';
+            $result = Db::getInstance()->executeS("SHOW TABLES LIKE '" . pSQL($table_name) . "'");
+            $this->deleted_references_table_exists = !empty($result);
+        }
+
+        // If table doesn't exist, don't block anything
+        if (!$this->deleted_references_table_exists) {
+            return false;
+        }
+
+        // Check if reference is blocked
+        $column = ($type === 'combination') ? 'reference_combination' : 'reference_product';
+        $sql = 'SELECT id FROM `' . _DB_PREFIX_ . 'product_combiner_deleted_references` 
+                WHERE `' . bqSQL($column) . '` = \'' . pSQL($reference) . '\' 
+                LIMIT 1';
+        
+        return (bool) Db::getInstance()->getValue($sql);
     }
 }
