@@ -6713,10 +6713,16 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
 
         // Check if reference is blocked
         $column = ($type === 'combination') ? 'reference_combination' : 'reference_product';
-        $sql = 'SELECT id FROM `' . _DB_PREFIX_ . 'product_combiner_deleted_references` 
-                WHERE `' . bqSQL($column) . '` = \'' . pSQL($reference) . '\' 
-                LIMIT 1';
-        
-        return (bool) Db::getInstance()->getValue($sql);
+        $sql = 'SELECT id FROM `' . _DB_PREFIX_ . 'product_combiner_deleted_references`
+                WHERE `' . bqSQL($column) . '` = \'' . pSQL($reference) . '\'';
+
+        $blocked = (bool) Db::getInstance()->getValue($sql);
+
+        // TEMP LOG: delete this block when no longer needed
+        if ($blocked) {
+            file_put_contents(dirname(__FILE__) . '/../blocked_references.log', date('Y-m-d H:i:s') . ' | ' . $type . ' | ' . $reference . "\n", FILE_APPEND);
+        }
+
+        return $blocked;
     }
 }
