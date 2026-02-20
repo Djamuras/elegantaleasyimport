@@ -6718,10 +6718,10 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
 
         $blocked = (bool) Db::getInstance()->getValue($sql);
 
-        // TEMP LOG: delete this block when no longer needed
-        if ($blocked) {
-            file_put_contents(dirname(__FILE__) . '/../blocked_references.log', date('Y-m-d H:i:s') . ' | ' . $type . ' | ' . $reference . "\n", FILE_APPEND);
-        }
+        // // TEMP LOG: delete this block when no longer needed
+        // if ($blocked) {
+        //     file_put_contents(dirname(__FILE__) . '/../blocked_references.log', date('Y-m-d H:i:s') . ' | ' . $type . ' | ' . $reference . "\n", FILE_APPEND);
+        // }
 
         return $blocked;
     }
