@@ -4953,20 +4953,9 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                             Db::getInstance()->execute('UPDATE `' . _DB_PREFIX_ . 'image_shop` SET `cover` = 1 WHERE `id_product` = ' . (int) $product->id . ' AND `id_image` = ' . (int) $id_cover_image);
                         }
                     } else {
-                        // Use placeholder image if original not found
-                        $placeholder_url = Tools::getShopDomainSsl(true) . __PS_BASE_URI__ . 'modules/elegantaleasyimport/nuotraukos-nera.jpg';
-                        
-                        if (ElegantalEasyImportTools::copyImg($product->id, $image, $placeholder_url, $username, $password, $convert_to) && is_file($image_file)) {
-                            $images_hashes[md5_file($image_file)] = ['image_id' => $image->id, 'image_file' => $image_file];
-                            if (!in_array($image->id, $image_ids)) {
-                                $image_ids[] = $image->id;
-                            }
-                            $this->addError('Image not found, placeholder used: ' . $url, $product);
-                        } else {
-                            $image->delete();
-                            ElegantalEasyImportTools::deleteFolderIfEmpty($image_dir);
-                            $this->addError('Image not found: ' . $url, $product);
-                        }
+                        $image->delete();
+                        ElegantalEasyImportTools::deleteFolderIfEmpty($image_dir);
+                        $this->addError('Image not found: ' . $url, $product);
                     }
                 } else {
                     $this->addError('Failed to create image object. ' . Db::getInstance()->getMsgError(), $product);
