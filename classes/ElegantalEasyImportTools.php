@@ -426,14 +426,13 @@ class ElegantalEasyImportTools
 
     public static function getFileContents($url_to_file, $username = null, $password = null, $timeout = 500)
     {
-        $header = "Referrer-Policy: no-referrer\r\n";
-        $header .= "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/54.0.1\r\n";
+        $headers = self::getBrowserLikeHeaders($url_to_file);
         if ($username && $password) {
-            $header .= 'Authorization: Basic ' . call_user_func('base64_encode', $username . ':' . $password) . "\r\n";
+            $headers[] = 'Authorization: Basic ' . call_user_func('base64_encode', $username . ':' . $password);
         }
         $context = stream_context_create([
             'http' => [
-                'header' => $header,
+                'header' => implode("\r\n", $headers) . "\r\n",
             ],
         ]);
 
@@ -448,7 +447,8 @@ class ElegantalEasyImportTools
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/54.0.1');
+        curl_setopt($ch, CURLOPT_USERAGENT, self::getBrowserUserAgent());
+        curl_setopt($ch, CURLOPT_HTTPHEADER, self::getBrowserLikeHeaders($url_to_file));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_URL, $url_to_file);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
@@ -475,7 +475,9 @@ class ElegantalEasyImportTools
             curl_setopt($ch, CURLOPT_UNRESTRICTED_AUTH, true);
             curl_setopt($ch, CURLOPT_USERPWD, $username . ':' . $password);
         } elseif ($password) {
-            curl_setopt($ch, CURLOPT_HTTPHEADER, [$password]);
+            $headers = self::getBrowserLikeHeaders($url_to_file);
+            $headers[] = $password;
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         }
 
         $file_contents = null;
@@ -498,6 +500,30 @@ class ElegantalEasyImportTools
         }
 
         return $file_contents;
+    }
+
+    protected static function getBrowserUserAgent()
+    {
+        return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
+    }
+
+    protected static function getBrowserLikeHeaders($url_to_file)
+    {
+        $headers = [
+            'Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+            'Accept-Language: en-US,en;q=0.9,lt;q=0.8',
+            'Cache-Control: no-cache',
+            'Pragma: no-cache',
+            'Connection: keep-alive',
+        ];
+
+        $parts = parse_url($url_to_file);
+        if (!empty($parts['scheme']) && !empty($parts['host'])) {
+            $headers[] = 'Referer: ' . $parts['scheme'] . '://' . $parts['host'] . '/';
+            $headers[] = 'Origin: ' . $parts['scheme'] . '://' . $parts['host'];
+        }
+
+        return $headers;
     }
 
     public static function encodeFullUrl($url)
