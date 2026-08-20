@@ -283,6 +283,9 @@
             <a href="{$adminUrl|escape:'html':'UTF-8'}&event=exportList" class="btn btn-default btn-lg">
                 <i class="icon-cloud-upload"></i> {l s='Export Rules' mod='elegantaleasyimport'}
             </a>
+            <a href="{$adminUrl|escape:'html':'UTF-8'}&event=importQueueCron" class="btn btn-default btn-lg">
+                <i class="icon-time"></i> {l s='Import Queue CRON' mod='elegantaleasyimport'}
+            </a>
             <a href="{$adminUrl|escape:'html':'UTF-8'}&event=restoreModule" class="btn btn-default btn-lg">
                 <i class="icon-save"></i> {l s='Backup/Restore' mod='elegantaleasyimport'}
             </a>

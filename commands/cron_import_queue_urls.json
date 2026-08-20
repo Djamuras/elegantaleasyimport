@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Supplier 1",
+    "steps": [
+      {
+        "name": "Products",
+        "url": "https://your-shop.com/module/elegantaleasyimport/import?id=1&secure_key=CHANGE_ME"
+      },
+      {
+        "name": "Combinations",
+        "url": "https://your-shop.com/module/elegantaleasyimport/import?id=2&secure_key=CHANGE_ME"
+      }
+    ]
+  }
+]

@@ -161,6 +161,9 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
                     case 'importCronInfo':
                         $html .= $this->importCronInfo();
                         break;
+                    case 'importQueueCron':
+                        $html .= $this->importQueueCron();
+                        break;
                     case 'importHistoryList':
                         $html .= $this->importHistoryList();
                         break;
@@ -2359,6 +2362,129 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
         );
 
         return $this->importRenderSteps(3) . $this->display(__FILE__, 'views/templates/admin/import_cron.tpl');
+    }
+
+    protected function importQueueCron()
+    {
+        $configFile = dirname(__FILE__) . '/commands/cron_import_queue_urls.json';
+        $stateFile = dirname(__FILE__) . '/tmp/cron_import_queue_state.json';
+
+        if (Tools::isSubmit('submitSaveImportQueueCron')) {
+            $supplierNames = isset($_POST['supplier_name']) && is_array($_POST['supplier_name']) ? $_POST['supplier_name'] : [];
+            $productUrls = isset($_POST['product_url']) && is_array($_POST['product_url']) ? $_POST['product_url'] : [];
+            $combinationUrls = isset($_POST['combination_url']) && is_array($_POST['combination_url']) ? $_POST['combination_url'] : [];
+            $queue = [];
+
+            foreach ($supplierNames as $index => $supplierName) {
+                $supplierName = trim((string) $supplierName);
+                $productUrl = isset($productUrls[$index]) ? trim((string) $productUrls[$index]) : '';
+                $combinationUrl = isset($combinationUrls[$index]) ? trim((string) $combinationUrls[$index]) : '';
+
+                if (!$supplierName && !$productUrl && !$combinationUrl) {
+                    continue;
+                }
+
+                $steps = [];
+                if ($productUrl) {
+                    $steps[] = [
+                        'name' => 'Products',
+                        'url' => $productUrl,
+                    ];
+                }
+                if ($combinationUrl) {
+                    $steps[] = [
+                        'name' => 'Combinations',
+                        'url' => $combinationUrl,
+                    ];
+                }
+
+                if (!$steps) {
+                    continue;
+                }
+
+                $queue[] = [
+                    'name' => $supplierName ? $supplierName : 'Supplier ' . (count($queue) + 1),
+                    'steps' => $steps,
+                ];
+            }
+
+            if (!$queue) {
+                $this->setRedirectAlert($this->l('Add at least one supplier with a product or combination CRON URL.'), 'error');
+            } elseif (!is_writable($configFile)) {
+                $this->setRedirectAlert($this->l('Import queue configuration file is not writable.'), 'error');
+            } else {
+                file_put_contents($configFile, json_encode($queue, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+                $this->setRedirectAlert($this->l('Import queue CRON configuration has been saved.'), 'success');
+            }
+
+            $this->redirectAdmin(['event' => 'importQueueCron']);
+        }
+
+        if (Tools::isSubmit('submitResetImportQueueState')) {
+            if (is_file($stateFile)) {
+                unlink($stateFile);
+            }
+            $this->setRedirectAlert($this->l('Import queue rotation state has been reset.'), 'success');
+            $this->redirectAdmin(['event' => 'importQueueCron']);
+        }
+
+        $configContent = is_file($configFile) ? file_get_contents($configFile) : "[]\n";
+        $queue = json_decode($configContent, true);
+        $suppliers = [];
+
+        if (is_array($queue)) {
+            foreach ($queue as $supplier) {
+                if (!is_array($supplier)) {
+                    continue;
+                }
+
+                $productUrl = '';
+                $combinationUrl = '';
+                if (!empty($supplier['steps']) && is_array($supplier['steps'])) {
+                    foreach ($supplier['steps'] as $stepIndex => $step) {
+                        if (!is_array($step) || empty($step['url'])) {
+                            continue;
+                        }
+                        $stepName = !empty($step['name']) ? Tools::strtolower((string) $step['name']) : '';
+                        if (strpos($stepName, 'combination') !== false) {
+                            $combinationUrl = (string) $step['url'];
+                        } elseif (!$productUrl) {
+                            $productUrl = (string) $step['url'];
+                        } elseif (!$combinationUrl) {
+                            $combinationUrl = (string) $step['url'];
+                        }
+                    }
+                }
+
+                $suppliers[] = [
+                    'name' => !empty($supplier['name']) ? (string) $supplier['name'] : 'Supplier ' . (count($suppliers) + 1),
+                    'product_url' => $productUrl,
+                    'combination_url' => $combinationUrl,
+                ];
+            }
+        }
+
+        if (!$suppliers) {
+            $suppliers[] = [
+                'name' => 'Supplier 1',
+                'product_url' => '',
+                'combination_url' => '',
+            ];
+        }
+
+        $this->context->smarty->assign(
+            [
+                'adminUrl' => $this->getAdminUrl(),
+                'queue_config_file' => $configFile,
+                'queue_cron_url' => $this->getControllerUrl('importqueue'),
+                'queue_cron_example' => '0,3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57 * * * * curl "' . $this->getControllerUrl('importqueue') . '" >/dev/null 2>&1',
+                'suppliers' => $suppliers,
+                'state_file' => $stateFile,
+                'state_exists' => is_file($stateFile),
+            ]
+        );
+
+        return $this->display(__FILE__, 'views/templates/admin/import_queue_cron.tpl');
     }
 
     protected function getFindProductsByForSelect()
