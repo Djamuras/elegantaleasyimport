@@ -25,5 +25,6 @@ require_once dirname(__FILE__) . '/classes/ElegantalEasyImportCategoryMap.php';
 require_once dirname(__FILE__) . '/classes/ElegantalEasyImportData.php';
 require_once dirname(__FILE__) . '/classes/ElegantalEasyImportError.php';
 require_once dirname(__FILE__) . '/classes/ElegantalEasyImportHistory.php';
+require_once dirname(__FILE__) . '/classes/ElegantalEasyImportMissingImage.php';
 require_once dirname(__FILE__) . '/classes/ElegantalEasyImportExport.php';
 require_once dirname(__FILE__) . '/classes/ElegantalEasyImportClass.php';

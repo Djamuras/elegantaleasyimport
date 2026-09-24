@@ -69,6 +69,7 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
         'is_allow_multiple_values_for_the_same_product_feature' => 1,
         'is_compare_image_using_imagick' => 0,
         'is_allow_hook_exec_after_product_save' => 0,
+        'save_missing_images_to_queue' => 0,
         'employee_id_for_events_log' => '',
         'security_token_key' => '',
         'is_disable_url_rewrite' => 0,
@@ -82,7 +83,7 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
     {
         $this->name = 'elegantaleasyimport';
         $this->tab = 'administration';
-        $this->version = '7.6.8';
+        $this->version = '7.6.10';
         $this->author = 'ELEGANTAL';
         $this->need_instance = 0;
         $this->bootstrap = true;
@@ -163,6 +164,9 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
                         break;
                     case 'importQueueCron':
                         $html .= $this->importQueueCron();
+                        break;
+                    case 'missingImagesRetry':
+                        $html .= $this->missingImagesRetry();
                         break;
                     case 'importHistoryList':
                         $html .= $this->importHistoryList();
@@ -388,6 +392,10 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
 
             if (empty($errors)) {
                 try {
+                    $settings = $this->model->getModelSettings();
+                    $settings['save_missing_images_to_queue'] = Tools::getValue('save_missing_images_to_queue') ? 1 : 0;
+                    $this->model->other_settings = ElegantalEasyImportTools::storable($settings);
+
                     // If file is not uploaded, skip this and continue to save rule settings
                     if ($this->model->id && $this->model->import_type == ElegantalEasyImportClass::$IMPORT_TYPE_UPLOAD && (!isset($_FILES['csv_file_upload']) || empty($_FILES['csv_file_upload']['tmp_name']) || !is_uploaded_file($_FILES['csv_file_upload']['tmp_name']))) {
                         // Nothing
@@ -424,6 +432,8 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
         }
 
         $fields_value = $this->model->getAttributes();
+        $model_settings = $this->model->getModelSettings();
+        $fields_value['save_missing_images_to_queue'] = isset($model_settings['save_missing_images_to_queue']) ? (int) $model_settings['save_missing_images_to_queue'] : 0;
 
         // Default Values
         if (!$fields_value['id_elegantaleasyimport'] && !$this->isPostRequest()) {
@@ -445,6 +455,7 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
             $fields_value['enable_if_have_stock'] = 0;
             $fields_value['disable_if_no_stock'] = 0;
             $fields_value['disable_if_no_image'] = 0;
+            $fields_value['save_missing_images_to_queue'] = 0;
             $fields_value['enable_all_products_found_in_csv'] = 0;
             $fields_value['disable_all_products_not_found_in_csv'] = 0;
             $fields_value['deny_orders_when_no_stock_for_products_not_found_in_file'] = 0;
@@ -890,6 +901,25 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
                     ],
                 ],
                 'desc' => $this->l('All products in file that have no image will be disabled.'),
+            ],
+            [
+                'type' => (_PS_VERSION_ < '1.6') ? 'el_switch' : 'switch',
+                'label' => $this->l('Save missing images to retry queue'),
+                'name' => 'save_missing_images_to_queue',
+                'is_bool' => true,
+                'values' => [
+                    [
+                        'id' => 'save_missing_images_to_queue_on',
+                        'value' => 1,
+                        'label' => $this->l('Yes'),
+                    ],
+                    [
+                        'id' => 'save_missing_images_to_queue_off',
+                        'value' => 0,
+                        'label' => $this->l('No'),
+                    ],
+                ],
+                'desc' => $this->l('If an image URL is not available during import, it will be saved and retried later by the Missing Images Retry CRON. The product or combination import will continue normally.'),
             ],
             [
                 'type' => (_PS_VERSION_ < '1.6') ? 'el_switch' : 'switch',
@@ -2485,6 +2515,38 @@ class ElegantalEasyImport extends ElegantalEasyImportModule
         );
 
         return $this->display(__FILE__, 'views/templates/admin/import_queue_cron.tpl');
+    }
+
+    protected function missingImagesRetry()
+    {
+        ElegantalEasyImportMissingImage::install();
+
+        if (Tools::isSubmit('submitRetryMissingImagesNow')) {
+            $result = ElegantalEasyImportMissingImage::process(25);
+            $this->setRedirectAlert(
+                $this->l('Missing images retry completed.') . ' ' .
+                $this->l('Checked') . ': ' . (int) $result['checked'] . ', ' .
+                $this->l('Imported') . ': ' . (int) $result['imported'] . ', ' .
+                $this->l('Failed') . ': ' . (int) $result['failed'] . ', ' .
+                $this->l('Deleted') . ': ' . (int) $result['deleted'],
+                'success'
+            );
+            $this->redirectAdmin(['event' => 'missingImagesRetry']);
+        }
+
+        $stats = ElegantalEasyImportMissingImage::getStats();
+        $retryUrl = $this->getControllerUrl('missingimagesretry');
+        $this->context->smarty->assign(
+            [
+                'adminUrl' => $this->getAdminUrl(),
+                'retry_url' => $retryUrl,
+                'retry_cron_example' => '0 3 * * * curl "' . $retryUrl . '" >/dev/null 2>&1',
+                'pending_count' => (int) $stats['pending'],
+                'due_count' => (int) $stats['due'],
+            ]
+        );
+
+        return $this->display(__FILE__, 'views/templates/admin/missing_images_retry.tpl');
     }
 
     protected function getFindProductsByForSelect()

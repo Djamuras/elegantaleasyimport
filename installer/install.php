@@ -129,6 +129,28 @@ $sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'elegantaleasyimport_err
     FOREIGN KEY (`id_elegantaleasyimport_history`) REFERENCES `' . _DB_PREFIX_ . 'elegantaleasyimport_history` (`id_elegantaleasyimport_history`) ON DELETE CASCADE
 ) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=UTF8;';
 
+$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . "elegantaleasyimport_missing_image` (
+    `id_elegantaleasyimport_missing_image` int(11) unsigned NOT NULL AUTO_INCREMENT,
+    `id_elegantaleasyimport` int(11) unsigned NOT NULL,
+    `id_product` int(11) unsigned NOT NULL DEFAULT '0',
+    `id_product_attribute` int(11) unsigned NOT NULL DEFAULT '0',
+    `product_reference` varchar(255),
+    `combination_reference` varchar(255),
+    `image_url` text NOT NULL,
+    `image_url_hash` char(32) NOT NULL,
+    `attempts` int(11) unsigned NOT NULL DEFAULT '1',
+    `last_error` text,
+    `last_attempt_at` DATETIME,
+    `next_attempt_at` DATETIME,
+    `date_add` DATETIME,
+    `date_upd` DATETIME,
+    PRIMARY KEY (`id_elegantaleasyimport_missing_image`),
+    UNIQUE KEY `missing_image_unique` (`id_elegantaleasyimport`, `id_product`, `id_product_attribute`, `combination_reference`, `image_url_hash`),
+    KEY `next_attempt_at` (`next_attempt_at`),
+    KEY `id_product` (`id_product`),
+    KEY `id_product_attribute` (`id_product_attribute`)
+) ENGINE=" . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=UTF8;';
+
 $sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . "elegantaleasyimport_export` (
     `id_elegantaleasyimport_export` int(11) unsigned NOT NULL AUTO_INCREMENT,
     `name` varchar(255) NOT NULL,

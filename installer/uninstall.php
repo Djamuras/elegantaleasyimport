@@ -16,6 +16,7 @@ $sql = [];
 // Drop tables that are created during module installation. Note: order of queries is important here.
 $sql[] = 'DROP TABLE IF EXISTS `' . _DB_PREFIX_ . 'elegantaleasyimport_export_shop`';
 $sql[] = 'DROP TABLE IF EXISTS `' . _DB_PREFIX_ . 'elegantaleasyimport_export`';
+$sql[] = 'DROP TABLE IF EXISTS `' . _DB_PREFIX_ . 'elegantaleasyimport_missing_image`';
 $sql[] = 'DROP TABLE IF EXISTS `' . _DB_PREFIX_ . 'elegantaleasyimport_error`';
 $sql[] = 'DROP TABLE IF EXISTS `' . _DB_PREFIX_ . 'elegantaleasyimport_history`';
 $sql[] = 'DROP TABLE IF EXISTS `' . _DB_PREFIX_ . 'elegantaleasyimport_category_map`';

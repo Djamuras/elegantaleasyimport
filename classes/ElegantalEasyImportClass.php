@@ -158,6 +158,13 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
     protected $current_id_reference;
 
     /**
+     * id_reference_comb from file for current combination being imported
+     *
+     * @var string
+     */
+    protected $current_id_reference_comb;
+
+    /**
      * Variables to cache data
      *
      * @var array
@@ -1177,6 +1184,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
 
             $id_reference = isset($line[$map['id_reference']]) ? $line[$map['id_reference']] : '';
             $this->current_id_reference = $id_reference;
+            $this->current_id_reference_comb = '';
 
             // Check if reference is blocked in deleted references table
             if ($this->isReferenceBlocked($id_reference, 'product')) {
@@ -3046,6 +3054,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
             $this->current_id_reference = $id_reference;
 
             $id_reference_comb = isset($line[$map['id_reference_comb']]) ? $line[$map['id_reference_comb']] : '';
+            $this->current_id_reference_comb = $id_reference_comb;
 
             // Check if product or combination reference is blocked in deleted references table
             if ($this->isReferenceBlocked($id_reference, 'product')) {
@@ -4956,6 +4965,7 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
                         $image->delete();
                         ElegantalEasyImportTools::deleteFolderIfEmpty($image_dir);
                         $this->addError('Image not found: ' . $url, $product);
+                        $this->saveMissingImageToQueue($product, $url);
                     }
                 } else {
                     $this->addError('Failed to create image object. ' . Db::getInstance()->getMsgError(), $product);
@@ -4990,6 +5000,24 @@ class ElegantalEasyImportClass extends ElegantalEasyImportObjectModel
         }
 
         return $image_ids;
+    }
+
+    protected function saveMissingImageToQueue($product, $url)
+    {
+        $settings = $this->getModelSettings();
+        if (empty($settings['save_missing_images_to_queue']) || !$product || empty($product->id) || !$url) {
+            return false;
+        }
+
+        return ElegantalEasyImportMissingImage::enqueue(
+            $this->id,
+            (int) $product->id,
+            0,
+            (string) $this->current_id_reference,
+            (string) $this->current_id_reference_comb,
+            (string) $url,
+            'Image not found'
+        );
     }
     
     protected function createProductFeatures($id_product, $features, $is_allow_multiple_values_for_the_same_product_feature)

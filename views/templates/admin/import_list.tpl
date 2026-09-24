@@ -286,6 +286,9 @@
             <a href="{$adminUrl|escape:'html':'UTF-8'}&event=importQueueCron" class="btn btn-default btn-lg">
                 <i class="icon-time"></i> {l s='Import Queue CRON' mod='elegantaleasyimport'}
             </a>
+            <a href="{$adminUrl|escape:'html':'UTF-8'}&event=missingImagesRetry" class="btn btn-default btn-lg">
+                <i class="icon-picture-o"></i> {l s='Missing Images Retry' mod='elegantaleasyimport'}
+            </a>
             <a href="{$adminUrl|escape:'html':'UTF-8'}&event=restoreModule" class="btn btn-default btn-lg">
                 <i class="icon-save"></i> {l s='Backup/Restore' mod='elegantaleasyimport'}
             </a>
